@@ -1,10 +1,10 @@
 import { Button, IconButton, TextField } from '@mui/material';
 import SendIcon from '@mui/icons-material/Send';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 
 function App() {
-  const [messages, setMessages] = useState();
+  const [messages, setMessages] = useState([]);
   const [input, setInput] = useState("");
 
   const  handleClick = () => {
